@@ -1,0 +1,55 @@
+# macOS
+.DS_Store
+._*
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependencies and build outputs
+node_modules/
+dist/
+build/
+out/
+.next/
+.turbo/
+
+# Python cache and virtualenvs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Codex pet generation scratch space
+runs/
+generated/
+generated_images/
+tmp/
+temp/
+qa/
+frames/
+decoded/
+final/
+
+# Archives and bulky local exports
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Local secrets/config
+.env
+.env.*
+!.env.example
