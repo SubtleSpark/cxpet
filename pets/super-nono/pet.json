@@ -2,5 +2,6 @@
   "id": "super-nono",
   "displayName": "Super NONO",
   "description": "A footless hovering cyan-and-white robot PET inspired by Super NONO.",
+  "spriteVersionNumber": 2,
   "spritesheetPath": "spritesheet.webp"
 }
