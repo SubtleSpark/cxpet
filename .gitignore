@@ -34,6 +34,7 @@ venv/
 
 # Codex pet generation scratch space
 runs/
+output/
 generated/
 generated_images/
 tmp/

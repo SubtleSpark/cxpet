@@ -35,6 +35,7 @@ pets/<pet-id>/
   "id": "pet-id",
   "displayName": "Pet Name",
   "description": "One short sentence.",
+  "spriteVersionNumber": 2,
   "spritesheetPath": "spritesheet.webp"
 }
 ```
@@ -42,8 +43,8 @@ pets/<pet-id>/
 spritesheet 约定：
 
 - 格式：WebP，透明背景。
-- 尺寸：`1536x1872`。
-- 网格：8 列 x 9 行。
+- v1 尺寸：`1536x1872`，8 列 x 9 行；可省略 `spriteVersionNumber`。
+- v2 尺寸：`1536x2288`，8 列 x 11 行；必须设置 `"spriteVersionNumber": 2`。
 - 单格：`192x208`。
 - 未使用的单元格必须完全透明。
 
@@ -60,6 +61,15 @@ spritesheet 约定：
 | 6 | `waiting` | 0-5 |
 | 7 | `running` | 0-5 |
 | 8 | `review` | 0-5 |
+| 9 | `look directions A` | 0-7 |
+| 10 | `look directions B` | 0-7 |
+
+v2 的方向行固定按顺时针排列：
+
+- Row 9：`000`, `022.5`, `045`, `067.5`, `090`, `112.5`, `135`, `157.5`
+- Row 10：`180`, `202.5`, `225`, `247.5`, `270`, `292.5`, `315`, `337.5`
+
+其中 `000` 表示向上看，静止/正面状态仍由普通 `idle` 动画提供。
 
 ## 安装
 
